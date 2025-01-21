@@ -1,16 +1,17 @@
 {
-  "name": "Website",
+  "homepage": "https://napptix-git.github.io/Webiste",
+  "name": "Webiste",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://napptix-git.github.io/Webiste",
   "scripts": {
     "dev": "vite",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "preview": "vite preview"
+    
   },
   "dependencies": {
     "@gsap/react": "^2.1.1",
